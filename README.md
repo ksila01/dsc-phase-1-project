@@ -1,5 +1,6 @@
 # Analyzing Movie Data for Microsoft
 ![Microsoft](https://github.com/ksila01/dsc-phase-1-project/blob/main/image%2010.png)
+![Microsoft](https://github.com/ksila01/dsc-phase-1-project/blob/main/download.jpg)
 ## Project Overview
 
 This project utilizes exploratory data analysis to explore trends such as production, release, and profitability of movie genres since 2015. The project will utilize various datasets with basic movie information and financial data. The project will visually display the results of the analysis to help Microsoft in making informed decisions when venturing into the movie industry
@@ -9,10 +10,10 @@ Microsoft wants to diversify its business from just producing software programs 
 ### The Data
 
 Data utilized in this project will include datasets from;
-imdb.name.basics.csv.gz
-imdb.title.basics.csv.gz
-tn.movie_budgets.csv.gz
-* [IMDB](https://github.com/ksila01/dsc-phase-1-project/blob/main/Image%209.png)
+**imdb.name.basics.csv.gz
+**imdb.title.basics.csv.gz
+**tn.movie_budgets.csv.gz
+* [IMDB](https://github.com/ksila01/dsc-phase-1-project/blob/main/download.png)
 
 ## Parameters
 
@@ -20,10 +21,10 @@ Since Microsoft is an international company, this analysis used the worldwide gr
 
 ### Research Questions
 
-**Which movies were most profitable since 2015 and what was their budget?.** 
-**Which genres with most produced movies?.** 
-**Which genres have the most user ratings? Do high ratings translate to high-profit margins?.** 
-**What is the best time of the year to release a movie?** 
+1. **Which movies were most profitable since 2015 and what was their budget?.** 
+2. **Which genres with most produced movies?.** 
+3. **Which genres have the most user ratings? Do high ratings translate to high-profit margins?.** 
+4. **What is the best time of the year to release a movie?** 
 
 ## Results
 
@@ -50,12 +51,12 @@ The best month to release a movie best on the profit margins of the release mont
 
 ## conclusions
 
-Given the findings from the above analysis, Microsoft can consider investing in Musical
+1. Given the findings from the above analysis, Microsoft can consider investing in Musical
 genres since I don’t think the production budget will be a big challenge for the giant tech
 company
-• Such a genre will make the organization have a good return on investments and
+2. Such a genre will make the organization have a good return on investments and
 maintain its reputation
-• Alternatively, the company can choose low-budget movies such as horror which also
+3. Alternatively, the company can choose low-budget movies such as horror which also
 has high returns.
-• However, since the horror genre has the lowest ratings, it should be a secondary option after
+4. However, since the horror genre has the lowest ratings, it should be a secondary option after
 musicals
