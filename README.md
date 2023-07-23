@@ -1,62 +1,61 @@
-# Phase 1 Project
-
-![Alt text](https://github.com/ksila01/dsc-phase-1-project/blob/main/image%201.png)
-
-
+# Analyzing Movie Data for Microsoft
+![Microsoft](https://github.com/ksila01/dsc-phase-1-project/blob/main/image%2010.png)
 ## Project Overview
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
-
+This project utilizes exploratory data analysis to explore trends such as production, release, and profitability of movie genres since 2015. The project will utilize various datasets with basic movie information and financial data. The project will visually display the results of the analysis to help Microsoft in making informed decisions when venturing into the movie industry
 ### Business Problem
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
-
+Microsoft wants to diversify its business from just producing software programs to now creating its on movie studio that will store its original movie contents. The move is intended to help the giant tech remain competitive in the dynamic tech world. Thus, the analysis will provide recommendations on movie genres and release_month appropriate for the company to release its movies
 ### The Data
 
-In the folder `zippedData` are movie datasets from:
+Data utilized in this project will include datasets from;
+imdb.name.basics.csv.gz
+imdb.title.basics.csv.gz
+tn.movie_budgets.csv.gz
+* [IMDB](https://github.com/ksila01/dsc-phase-1-project/blob/main/Image%209.png)
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+## Parameters
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+Since Microsoft is an international company, this analysis used the worldwide gross in terms of the production budget, profit, and profit margin. Also, since most movies were produced between 2018 to 2019, I included the current inflation rate of 0.297 to provide Microsoft with the best advice per the 2023 economy. Thus, the adjusted budget, adjusted profit, and adjusted profit margin have put into consideration the inflation rates
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+### Research Questions
 
-## Deliverables
+**Which movies were most profitable since 2015 and what was their budget?.** 
+**Which genres with most produced movies?.** 
+**Which genres have the most user ratings? Do high ratings translate to high-profit margins?.** 
+**What is the best time of the year to release a movie?** 
 
-There are three deliverables for this project:
+## Results
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+Avengers: Affinity Wars had the biggest return on investment in terms of the production budget and the profit it earned. The top 20 successful movies had a median production budget of 1.955 Billion Dollars and a profit margin of 85.7%
+![Production_budget, profit vs Movies](https://github.com/ksila01/dsc-phase-1-project/blob/main/image%201.png)
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+Genres with most produced movies include Drama, Comedy, and Action
+![most produced genres](https://github.com/ksila01/dsc-phase-1-project/blob/main/Image%203.png)
 
-### Key Points
+Genres with the highest ratings include Musical, History, and Sport
+![Highest Ratings](https://github.com/ksila01/dsc-phase-1-project/blob/main/Image%204.png)
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+The highest rating does not necessarily mean the highest profit margin except for exceptional cases such as musicals which have the highest ratings and highest profit_margin
+![Ratings Vs Profit](https://github.com/ksila01/dsc-phase-1-project/blob/main/Image%205.png)
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+Genres with the highest production costs include musical, adventure, and fantasy while those with the lowest production costs include war, horror, and mystery
+![Highest and Lowest Production Cost](https://github.com/ksila01/dsc-phase-1-project/blob/main/Image%206.png)
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+Months with the most movie_releases are November, October, and December
+![Highest Release Months](https://github.com/ksila01/dsc-phase-1-project/blob/main/Image%207.png)
 
-## Getting Started
+The best month to release a movie best on the profit margins of the release month is July
+![Best Release Month](https://github.com/ksila01/dsc-phase-1-project/blob/main/Image%208.png)
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+## conclusions
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
-
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+Given the findings from the above analysis, Microsoft can consider investing in Musical
+genres since I don’t think the production budget will be a big challenge for the giant tech
+company
+• Such a genre will make the organization have a good return on investments and
+maintain its reputation
+• Alternatively, the company can choose low-budget movies such as horror which also
+has high returns.
+• However, since the horror genre has the lowest ratings, it should be a secondary option after
+musicals
